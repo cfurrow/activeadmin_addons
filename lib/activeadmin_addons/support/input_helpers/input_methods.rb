@@ -4,6 +4,10 @@ module ActiveAdminAddons
       @object_name
     end
 
+    def model_name_underscored
+      model_name.underscore.gsub(/\//, '_')
+    end
+
     def valid_method
       raise "invalid method given" if method.blank?
 

@@ -3,7 +3,7 @@ module ActiveAdminAddons
     include InputMethods
 
     def prefixed_method
-      "#{model_name}_#{valid_method}"
+      "#{model_name_underscored}_#{valid_method}"
     end
 
     def method_to_input_name
